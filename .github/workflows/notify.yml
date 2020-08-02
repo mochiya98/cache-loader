@@ -1,0 +1,27 @@
+name: NotifyCI
+
+on:
+  schedule:
+  - cron: 0 0 * * *
+  push:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Notify
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        URL: ${{ github.event.pull_request.comments_url }}
+      run: |
+        rm package-lock.json
+        npx npm-check-updates -u
+        npm i
+        npm audit fix
+        npm audit fix --force
+        npm audit && curl -X POST -H "Authorization: token ${GITHUB_TOKEN}" -d "{\"body\": \"now ready!!\"}" https://api.github.com/repos/mochiya98/cache-loader/issues/1/comments
+        echo done
+

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cacheContext option should generate absolute paths to the project root: errors 1`] = `Array []`;
+
+exports[`cacheContext option should generate absolute paths to the project root: warnings 1`] = `Array []`;
+
+exports[`cacheContext option should generate relative paths to the project root: errors 1`] = `Array []`;
+
+exports[`cacheContext option should generate relative paths to the project root: generated cache-loader data 1`] = `
+"[
+  {
+    \\"remainingRequest\\": \\"test/fixtures/basic/file_1.js\\",
+    \\"dependencies\\": [
+      {
+        \\"path\\": \\"test/fixtures/basic/file_1.js\\",
+        \\"mtime\\": null
+      },
+      {
+        \\"path\\": \\"src/index.js\\",
+        \\"mtime\\": null
+      }
+    ],
+    \\"contextDependencies\\": [],
+    \\"addedFiles\\": [],
+    \\"result\\": [
+      {
+        \\"type\\": \\"Buffer\\",
+        \\"data\\": \\"base64:LyogZXNsaW50LWRpc2FibGUgKi8KY29uc29sZS5sb2coJ2ZpbGVfMScpOwo=\\"
+      }
+    ]
+  },
+  {
+    \\"remainingRequest\\": \\"test/fixtures/basic/file_2.js\\",
+    \\"dependencies\\": [
+      {
+        \\"path\\": \\"test/fixtures/basic/file_2.js\\",
+        \\"mtime\\": null
+      },
+      {
+        \\"path\\": \\"src/index.js\\",
+        \\"mtime\\": null
+      }
+    ],
+    \\"contextDependencies\\": [],
+    \\"addedFiles\\": [],
+    \\"result\\": [
+      {
+        \\"type\\": \\"Buffer\\",
+        \\"data\\": \\"base64:LyogZXNsaW50LWRpc2FibGUgKi8KY29uc29sZS5sb2coJ2ZpbGVfMicpOwo=\\"
+      }
+    ]
+  },
+  {
+    \\"remainingRequest\\": \\"test/fixtures/basic/index.js\\",
+    \\"dependencies\\": [
+      {
+        \\"path\\": \\"test/fixtures/basic/index.js\\",
+        \\"mtime\\": null
+      },
+      {
+        \\"path\\": \\"src/index.js\\",
+        \\"mtime\\": null
+      }
+    ],
+    \\"contextDependencies\\": [],
+    \\"addedFiles\\": [],
+    \\"result\\": [
+      {
+        \\"type\\": \\"Buffer\\",
+        \\"data\\": \\"base64:LyogZXNsaW50LWRpc2FibGUgKi8KcmVxdWlyZSgnLi9maWxlXzEuanMnKTsKcmVxdWlyZSgnLi9maWxlXzIuanMnKTsKCmNvbnNvbGUubG9nKCdiYXNpY19lbnRyeScpOwo=\\"
+      }
+    ]
+  }
+]"
+`;
+
+exports[`cacheContext option should generate relative paths to the project root: warnings 1`] = `Array []`;
+
+exports[`cacheContext option should load as a raw loader to support images: errors 1`] = `Array []`;
+
+exports[`cacheContext option should load as a raw loader to support images: warnings 1`] = `Array []`;
